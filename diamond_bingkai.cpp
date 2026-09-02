@@ -11,7 +11,12 @@ int main() {
             cout << " ";
         }
         for (int k=1;k<=i*2-1;k++){
-            cout << "*";
+            if(k==1 or k==i*2-1 ){
+                cout <<"*";
+            }
+            else{
+                cout <<" ";
+            }
         }
         cout << endl;
     }
@@ -21,7 +26,13 @@ int main() {
             cout << " ";
         }
         for (int k=1;k<=2*(n-i)-1;k++){
-            cout << "*";
+            if (k==1 or k==n*2-i*2-1){
+                cout << "*";
+            }
+            else{
+                cout << " ";
+            }
+            
         }
         cout << endl;
     }
